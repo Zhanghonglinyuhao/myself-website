@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="cn" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<!--以下是css部分-->
+<style type="text/css">
+  *{margin: 0;padding: 0;}
+  div {
+    position: relative;
+  }
+  div p{
+    position: absolute;
+  }
+  div button {
+    left: 10px;
+    top: 5px;
+  }
+  div img {
+    position: absolute;
+    left: 0px;
+    top: 0px
+  }
+</style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    background-image: url(head/p5.png);
+    background-size: 1500px 1900px;
+    background-position: center;
+    width: 1500px;
+    height:900px;
+    padding: 20px;
+    color: #fff;
+    left: 200px;
+    top: 150px
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 35px;
+    text-shadow: 2px 2px #ffffff;
+    color: black;
+  }
+  h2 {
+    font-size:19px;
+    text-shadow: 1px 1px #ffffff;
+    color: black;
+    padding-left: 40px;
+    z-index: 7;
+    position: absolute;
+  }
+</style>
+<!--以下是正经的HTML(其实有有一部分部分是无可避免的CSS，没法拆分)-->
+<div>
+  <div style="position: absolute;">
+    <img src="./head/无标题.png"
+         alt="加载中"
+         title="标签块"
+         width="1900"
+         height="100"
+         style="z-index: 3">
+    <img src="./head/fgf.png"
+    style="left: 960px;top: 250px;z-index: 5;height: 800px;width: 10px">
+    <img src="./head/fgf2.png"
+         style="z-index: 6;width: 1480px;height: 10px;left: 230px;top:700px">
+  </div>
+  <img src="./head/p4.png" alt="加载中" width="1900">
+</div>
+<a href="游戏.html">
+  <button style="position:absolute;
+        background-color: rgba(87,86,86,0.3);
+        color: white;
+        font-size: 18px;
+        z-index: 4;
+        padding: 10px 20px;
+        left: 690px;top: 25px">
+    作品：遥感飞船
+  </button>
+</a>
+<a style="color: #fff; text-decoration: none">
+  <div>
+    <img src="./head/校徽.jpg"
+         width="75"
+         height="75"
+         style="z-index: 3 ;left: 15px;top: 10px">
+    <img src="./head/image.png"
+         width="490"
+         style="z-index: 3;left: 120px;top: 15px">
+  </div>
+</a>
+<div class="container">
+  <h1 style="top: -80px">810班新风采</h1>
+  <h2><a>新闻标题1</a></h2>
+</div>
+
+<div>
+  <p style="position: absolute; left: 800px;top:180px;">
+    &copy; by 浙江师范大学附属嘉善实验学校810
+  </p>
+</div>
+
+</body>
+</html>

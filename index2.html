@@ -16,10 +16,7 @@ div {
     position: relative;
 }
 div p{
-    left: 10px;
-    top: 10px;/*位置*/
-    color: white ;
-    font-size: 80px;
+    position: absolute;
 }
 div button {
     left: 10px;
@@ -30,6 +27,37 @@ div img {
     left: 0px;
     top: 0px
 }
+</style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        background-image: url(head/p5.png);
+        background-size: 1500px 1900px;
+        background-position: center;
+        width: 1500px;
+        height:900px;
+        padding: 20px;
+        color: #fff;
+        left: 200px;
+        top: 150px
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 28px;
+        text-shadow: 2px 2px #000;
+    }
+    h2 {
+        font-size:19px;
+        text-shadow: 1px 1px #ffffff;
+        color: black;
+    }
 </style>
 <!--以下是正经的HTML(其实有有一部分部分是无可避免的CSS，没法拆分)-->
 <div>
@@ -49,16 +77,26 @@ div img {
             作品：遥感飞船
         </button>
 </a>
-<a>
+<a style="color: #fff; text-decoration: none">
     <div>
         <img src="./head/校徽.jpg"
         width="75"
         height="75"
-        style="z-index: 3 ;left: 15px;top: 15px">
+        style="z-index: 3 ;left: 15px;top: 10px">
         <img src="./head/image.png"
              width="490"
         style="z-index: 3;left: 120px;top: 15px">
     </div>
 </a>
+<div class="container">
+    <h1>新闻头条</h1>
+    <h2><a>新闻标题1</a></h2>
+</div>
+<div>
+    <p style="left: 900px;top:200px">
+    &copy; by张鸿林
+    </p>
+</div>
+
 </body>
 </html>
